@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar"
 
-export default function() {
+export default function NotFound() {
     
     return(
         <>

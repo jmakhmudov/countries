@@ -14,7 +14,7 @@ export default function Logo() {
             }}
         >
             <Link href="/">
-                <p>{"[...countries]"}</p>
+                <p>{"[countries]"}</p>
             </Link>
         </Typography>
     )
