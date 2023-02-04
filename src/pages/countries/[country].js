@@ -52,7 +52,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(ctx) {
     const { country } = ctx.params
 
-    const res = await fetch(`https://restcountries.com/v2/name/${country}`)
+    const res = await fetch(`https://restcountries.com/v2/name/${country}?fullText=true`)
     const data = await res.json()
 
     return {
