@@ -38,7 +38,7 @@ export async function getStaticPaths() {
     const paths = data.map(obj => {
         return {
             params: {
-                country: obj.name
+                country: obj.name.toLowerCase()
             }
         }
     })
