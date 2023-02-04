@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  domains: ['flagcdn.com']
 }
 
 module.exports = nextConfig

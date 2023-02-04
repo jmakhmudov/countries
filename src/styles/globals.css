@@ -11,3 +11,7 @@
 input:focus{
   outline: none;
 }
+
+body {
+  padding-top: 120px;
+}

@@ -8,11 +8,20 @@ a, a:hover, a:visited, a:active {
     text-align: right;
 }
 
-.flex-box {
+.flex-box2 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0, 10vw;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -56,3 +65,52 @@ a, a:hover, a:visited, a:active {
     margin-bottom: 12px;
     margin-right: 5px;
 }
+
+.country-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-name {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    max-width: 60vw;
+}
+
+.country-name img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .country-name {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .country-name img {
+        width: 50px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    }
+    
+    @media screen and (max-width: 767px) {
+    /* стили для средних планшетов - начало */
+    
+    }
+    
+    @media screen and (max-width: 479px) {
+    /* стили для телефонов - начало */
+    
+    }

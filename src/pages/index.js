@@ -43,7 +43,7 @@ export default function Home({ data }) {
               <div className="search-box">
                 <input className='search-country' type="text" placeholder='Country name' onChange={(e) => search(e)} />
                 <div className="found">
-                  {result.map(res => <Link href={res.id.toLowerCase()} key={res.id}>{res.id}</Link>)}
+                  {result.map(res => <Link href={`countries/${res.id.toLowerCase()}`} key={res.id}>{res.id}</Link>)}
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Home({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch("https://restcountries.com/v2/all")
   const data = await res.json()
 
