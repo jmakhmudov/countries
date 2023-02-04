@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import Navbar from "components/Navbar"
 import MiniSearch from 'minisearch'
 import Head from 'next/head'
 import { useState } from 'react'
