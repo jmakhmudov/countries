@@ -24,7 +24,7 @@ export default function Country({ data }) {
                         <img src={data[0].flag} alt="flag" />
                     </section>
                 </section>
-                
+
 
             </div>
         </>
@@ -45,7 +45,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: true
+        fallback: false
     }
 }
 
