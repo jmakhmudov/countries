@@ -86,8 +86,43 @@ a, a:hover, a:visited, a:active {
 .country-name img {
     width: 100px;
     margin-left: 20px;
+    border: 1px solid #bab8d0;
 }
 
+.detailed-info-box {
+    margin-top: 60px;
+}
+
+.main-info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-info-box .info-description {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.details-box span {
+    font-weight: 700;
+}
+
+.detailed-info-box {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.details-box {
+    margin-top: 40px;
+}
+
+.details-box div {
+    margin-top: 5px;
+}
 
 
 
@@ -103,6 +138,12 @@ a, a:hover, a:visited, a:active {
         width: 50px;
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .main-info-box {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
     }
     
     }
