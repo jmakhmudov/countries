@@ -69,8 +69,14 @@ export default function Country({ data }) {
                             <div>Gini: <span>{data[0].gini}</span></div>
 
                             <div>{data[0].callingCodes.length > 1 ? <>Calling codes: <span>{data[0].callingCodes[0] + ", " + data[0].callingCodes[1]}</span></> : <>Calling code: <span>{data[0].callingCodes[0]}</span></>} </div>
+                            <>
+                                {
+                                    data[0].currencies ?
+                                    <div>{data[0].currencies.length > 1 ? <>Currencies: <span>{data[0].currencies[0].name + " | " + data[0].currencies[1].name}</span></> : <>Currency: <span>{data[0].currencies[0].name}</span></>} </div> :
+                                    <></>
+                                }
 
-                            <div>{data[0].currencies.length > 1 ? <>Currencies: <span>{data[0].currencies[0].name + " | " + data[0].currencies[1].name}</span></> : <>Currency: <span>{data[0].currencies[0].name}</span></>} </div>
+                            </>
 
                             <div>Domain: <span>{data[0].topLevelDomain[0]}</span></div>
                         </div>
