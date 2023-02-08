@@ -6,8 +6,8 @@ export default function Region({ data }) {
 
     const elements = data.map(el => {
         return (
-            <div className="country-card" onClick={() => {router.push(`countries/${el.name.toLowerCase()}`)}}>
-                <section key={el.name}>
+            <div className="country-card" onClick={() => {router.push(`countries/${el.name.toLowerCase()}`)}} key={el.name}>
+                <section>
                     <div>{el.name}</div>
                     <img src={el.flag} width="20px"/>
                 </section>
