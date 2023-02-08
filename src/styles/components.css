@@ -114,6 +114,7 @@ a, a:hover, a:visited, a:active {
     flex-direction: column;
     width: 100vw;
     align-items: center;
+    justify-content: center;
 }
 
 .details-box {
@@ -122,6 +123,29 @@ a, a:hover, a:visited, a:active {
 
 .details-box div {
     margin-top: 5px;
+}
+
+.grid-countries {
+    width: 100vw;
+    padding: 0 8.5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 150px;
+}
+
+.country-card hr {
+    width: 100%;
+    color: #bab8d0;
+    margin-top: 10px;
+}
+
+.country-card section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 
@@ -142,8 +166,11 @@ a, a:hover, a:visited, a:active {
 
     .main-info-box {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        text-align: center;
+    }
+
+    .main-info-box .main-info {
+        margin-bottom: 20px;
     }
     
     }
@@ -154,6 +181,8 @@ a, a:hover, a:visited, a:active {
     }
     
     @media screen and (max-width: 479px) {
-    /* стили для телефонов - начало */
+    .grid-countries {
+        grid-template-columns: auto;
+    }
     
     }
