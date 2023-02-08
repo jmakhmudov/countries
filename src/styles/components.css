@@ -41,6 +41,7 @@ a, a:hover, a:visited, a:active {
     padding-left: 10px;
     color: #120D50;
     margin-top: 40px;
+    min-width: 280px;
 }
 
 .hero-box {
@@ -146,6 +147,10 @@ a, a:hover, a:visited, a:active {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+}
+
+.country-info-box {
+    margin-bottom: 150px;
 }
 
 
