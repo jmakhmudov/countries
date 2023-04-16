@@ -12,7 +12,7 @@ import * as React from 'react';
 import Logo from "./Logo";
 
 
-const pages = [['Africa', 'africa'], ['Americas', 'americas'], ['Asia', 'asia'], ['Europe', 'europe'], ['Oceania', 'oceania']];
+const pages = [['Africa', '/africa'], ['Americas', '/americas'], ['Asia', '/asia'], ['Europe', '/europe'], ['Oceania', '/oceania']];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
